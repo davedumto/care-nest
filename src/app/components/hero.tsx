@@ -22,7 +22,7 @@ const hero = () => {
         <button className="bg-[#518ac0]  py-[1em] rounded-full  px-[2em] text-[25px] font-[500] text-white">Book us now</button>
       </div>
       </div>
-
+      
     </div>
   );
 };

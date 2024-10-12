@@ -10,7 +10,9 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // For hamburger
 
 const navLinks = [
   { name: "Home", link: "/" },
-  { name: "Contact us", link: "/contact" },
+  { name: "About us", link: "/about" },
+  { name: "Contact us", link: "/contact" }
+ // Corrected this line
 ];
 
 const Navbar = () => {
