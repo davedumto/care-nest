@@ -12,7 +12,6 @@ const navLinks = [
   { name: "Home", link: "/" },
   { name: "About us", link: "/about" },
   { name: "Contact us", link: "/contact" }
- // Corrected this line
 ];
 
 const Navbar = () => {
@@ -24,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-[2em] sticky top-0 z-50 bg-white ">
+    <div className="flex justify-between items-center px-[2em] sticky top-0 z-50 bg-[#F6F5F5] shadow-md">
       {/* Logo Section */}
       <div>
         <a href="/" className="w-[20%]">
@@ -60,7 +59,7 @@ const Navbar = () => {
         whileHover={{ scale: 1.1, color: "gray-600" }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        <Link href="/">
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd_tpx_Bpwmwhq6cZl6lyfO3TjpRQHgNq_8FvMJua98obwdNQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
           <h1 className="text-white px-[3em] font-bold text-[20px]">
             Book us
           </h1>
@@ -94,8 +93,8 @@ const Navbar = () => {
 
             {/* Book Us Button inside mobile menu */}
             <div className="px-[1em] cursor-pointer border-[1px] border-[#518ac0] py-[1em] bg-[#518ac0] rounded-full mt-4">
-              <Link href="/">
-                <h1 className="text-[#cde3f8] px-[3em]  font-bold text-[20px]">
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd_tpx_Bpwmwhq6cZl6lyfO3TjpRQHgNq_8FvMJua98obwdNQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+                <h1 className="text-[#cde3f8] px-[3em] font-bold text-[20px]">
                   Book us
                 </h1>
               </Link>

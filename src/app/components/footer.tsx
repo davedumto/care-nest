@@ -1,11 +1,35 @@
-import React from 'react'
+"use client"; // Ensure the component is rendered on the client
 
-const footer = () => {
+import React from 'react';
+import Image from 'next/image';
+import Logo from "@/app/logo.svg";
+import { FaWhatsapp, FaPhone, FaMobile } from 'react-icons/fa'; // Importing WhatsApp and Phone icons
+import { FaPhoneFlip, FaSquarePhone } from 'react-icons/fa6';
+
+const Footer = () => {
   return (
-    <div className='bg-[#474F7A]'>
-      
-    </div>
-  )
-}
+    <div className='bg-[#515b92] flex justify-between items-center p-3 '>
+      <div>
+        <a href="/" className="w-[20%]">
+          <Image src={Logo} alt="Logo" height={100} width={200} className="" />
+        </a>
+      </div>
+      <div className='text-white pr-[3em]'>
+       <h1 className='text-[18px]'> Copyright © 2024</h1>
+        
+      </div>
 
-export default footer
+      <div className='flex items-center gap-[2em] pr-[3em]'>
+        {/* Added WhatsApp and Phone icons and flexed them */}
+        <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" className='p-3 border-[1px] border-white rounded-full'>
+          <FaWhatsapp className='text-white text-3xl' />
+        </a>
+        <a href="tel:+2349162183621" className='p-3 border-[1px] border-white rounded-full'>
+          <FaSquarePhone className='text-white text-3xl' />
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

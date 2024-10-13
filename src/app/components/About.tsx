@@ -5,11 +5,11 @@ import Logo2 from '@/app/BabyCare.svg'
 
 const About = () => {
   return (
-    <div className="lg:px-[3em] px-[1em] lg:mt-[5em] mt-[2em] ">
+    <div className="lg:px-[3em] px-[1em]  ">
       <div>
         <h1 className="text-[#b0d2f2] font-[400] text-[50px]">About Us</h1>
       </div>
-      <div className="flex-col flex lg:flex-row h-auto  lg:p-[4em]  justify-between lg:gap-[2em] items-center  bg-[#81689D] rounded-2xl mt-[2em] lg:mt-[5em]">
+      <div className="flex-col flex lg:flex-row h-auto  lg:px-[4em] lg:py-[2em]  justify-between lg:gap-[2em] items-center  bg-[#81689D] rounded-2xl mt-[2em] lg:mt-[3em]">
         <div className="lg:p-6 p-4">
             <Image src={Logo2} alt="logo image" className="h-[25em] w-[25em]"/>
 
