@@ -8,18 +8,18 @@ import { FaPhoneFlip, FaSquarePhone } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <div className='bg-[#515b92] flex justify-between items-center p-3 '>
+    <div className='bg-[#515b92] flex flex-col lg:flex-row justify-between gap-[1em] items-center lg:p-3 px-3 py-[1em]'>
       <div>
         <a href="/" className="w-[20%]">
-          <Image src={Logo} alt="Logo" height={100} width={200} className="" />
+          <Image src={Logo} alt="Logo" height={50} width={200} className="h-[7]" />
         </a>
       </div>
-      <div className='text-white pr-[3em]'>
-       <h1 className='text-[18px]'> Copyright © 2024</h1>
+      <div className='text-white lg:pr-[3em]'>
+       <h1 className='text-[18px]'> Copyright © 2024  </h1>
         
       </div>
 
-      <div className='flex items-center gap-[2em] pr-[3em]'>
+      <div className='flex item-center gap-[2em] lg:pr-[3em]'>
         {/* Added WhatsApp and Phone icons and flexed them */}
         <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" className='p-3 border-[1px] border-white rounded-full'>
           <FaWhatsapp className='text-white text-3xl' />
