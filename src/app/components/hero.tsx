@@ -19,7 +19,7 @@ const hero = () => {
 
   return (
     <section id="home">
-      <div className="lg:px-[5em] lg:pt-[4em] px-[1em] bg-[#FFD0EC]">
+      <div className="lg:px-[10em] lg:pt-[10em] px-[2em] bg-[#FFD0EC]">
         <div className="flex-col flex lg:flex-row justify-center items-center gap-[3em] lg:gap-0">
           <div className="">
             <h1

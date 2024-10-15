@@ -8,10 +8,10 @@ import { FaPhoneFlip, FaSquarePhone } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <div className='bg-[#515b92] flex flex-col lg:flex-row justify-between gap-[1em] items-center lg:p-3 px-3 py-[1em]'>
+    <div className='bg-[#515b92] flex flex-col lg:flex-row justify-between gap-[2em] items-center lg:p-3 px-3 py-[2em]'>
       <div>
         <a href="/" className="w-[20%]">
-          <Image src={Logo} alt="Logo" height={50} width={200} className="h-[7]" />
+          <Image src={Logo} alt="Logo" height={50} width={200} className="h-[6]" />
         </a>
       </div>
       <div className='text-white lg:pr-[3em]'>

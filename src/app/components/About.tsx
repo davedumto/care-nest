@@ -17,7 +17,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="lg:px-[3em] px-[1em]" id="about">
+    <section className="lg:px-[5em] px-[1em]" id="about">
       <div>
         <h1 className="text-[#b0d2f2] font-[400] text-[30px] lg:text-[50px]">
           About Us
