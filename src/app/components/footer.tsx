@@ -21,7 +21,7 @@ const Footer = () => {
 
       <div className='flex item-center gap-[2em] lg:pr-[3em]'>
         {/* Added WhatsApp and Phone icons and flexed them */}
-        <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" className='p-3 border-[1px] border-white rounded-full'>
+        <a href="https://wa.me/+2347030611794" target="_blank" rel="noopener noreferrer" className='p-3 border-[1px] border-white rounded-full'>
           <FaWhatsapp className='text-white text-3xl' />
         </a>
         <a href="tel:+2349162183621" className='p-3 border-[1px] border-white rounded-full'>

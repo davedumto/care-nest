@@ -39,6 +39,31 @@ const Navbar = () => {
     }
   };
 
+  // Close menu on click outside or scroll
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false); // Close menu if clicked outside
+      }
+    };
+
+    const handleScroll = () => {
+      if (isMobileMenuOpen) {
+        setIsMobileMenuOpen(false); // Close menu on scroll
+      }
+    };
+
+    // Add event listeners
+    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      // Cleanup event listeners
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMobileMenuOpen]);
+
   // Function to handle the active section based on scroll position
   useEffect(() => {
     const handleActiveSection = () => {
