@@ -25,33 +25,37 @@ const Navbar = () => {
 
   // Smooth scroll to the section with the given ID, considering the navbar height
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    const navbarHeight = navbarRef.current ? navbarRef.current.offsetHeight : 0; // Get the navbar height
+    if (typeof window !== "undefined") { // Check to ensure window is available
+      const section = document.getElementById(sectionId);
+      const navbarHeight = navbarRef.current ? navbarRef.current.offsetHeight : 0; // Get the navbar height
 
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop - navbarHeight, // Offset the scroll position by the navbar height
-        behavior: "smooth", // This triggers smooth scrolling
-      });
-      setActiveSection(sectionId); // Set the active section when the user clicks
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop - navbarHeight, // Offset the scroll position by the navbar height
+          behavior: "smooth", // This triggers smooth scrolling
+        });
+        setActiveSection(sectionId); // Set the active section when the user clicks
+      }
     }
   };
 
   // Function to handle the active section based on scroll position
   useEffect(() => {
     const handleActiveSection = () => {
-      const sections = ["home", "about", "contact"];
-      const navbarHeight = navbarRef.current ? navbarRef.current.offsetHeight : 0;
-      sections.forEach((sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          const sectionTop = section.offsetTop - navbarHeight;
-          const sectionHeight = section.offsetHeight;
-          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-            setActiveSection(sectionId);
+      if (typeof window !== "undefined") { // Ensure window is available
+        const sections = ["home", "about", "contact"];
+        const navbarHeight = navbarRef.current ? navbarRef.current.offsetHeight : 0;
+        sections.forEach((sectionId) => {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            const sectionTop = section.offsetTop - navbarHeight;
+            const sectionHeight = section.offsetHeight;
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+              setActiveSection(sectionId);
+            }
           }
-        }
-      });
+        });
+      }
     };
 
     window.addEventListener("scroll", handleActiveSection);

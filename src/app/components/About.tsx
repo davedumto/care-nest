@@ -6,14 +6,16 @@ import Logo2 from "@/app/BabyCare.svg";
 
 const About = () => {
   useEffect(() => {
-    // Initialize ScrollReveal on the paragraph
-    ScrollReveal().reveal(".reveal-paragraph", {
-      duration: 1500,
-      distance: "50px",
-      origin: "bottom",
-      reset: false, // Animation will happen only once
-      opacity: 0, // Fade in effect
-    });
+    // Ensure ScrollReveal runs only on the client side
+    if (typeof window !== "undefined") {
+      ScrollReveal().reveal(".reveal-paragraph", {
+        duration: 1500,
+        distance: "50px",
+        origin: "bottom",
+        reset: false, // Animation will happen only once
+        opacity: 0, // Fade in effect
+      });
+    }
   }, []);
 
   return (
