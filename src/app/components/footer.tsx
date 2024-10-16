@@ -3,8 +3,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Logo from "@/app/logo.svg";
-import { FaWhatsapp, FaPhone, FaMobile } from 'react-icons/fa'; // Importing WhatsApp and Phone icons
-import { FaPhoneFlip, FaSquarePhone } from 'react-icons/fa6';
+import { FaWhatsapp, } from 'react-icons/fa'; 
+import { FaSquarePhone } from 'react-icons/fa6';
 
 const Footer = () => {
   return (

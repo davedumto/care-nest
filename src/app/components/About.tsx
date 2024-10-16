@@ -34,9 +34,10 @@ const About = () => {
             passionate baby caregiver. With a heart rooted in Christian values,
             Mrs. Ejere is dedicated to nurturing children with Godly love,
             ensuring they grow in a safe and loving environment. As Proverbs
-            22:6 says, "Train up a child in the way he should go, and when he is
-            old, he will not depart from it." At CareNest, we strive to support
-            every child's growth with love and care that reflects these values.
+            22:6 says, &quot;Train up a child in the way he should go, and when
+            he is old, he will not depart from it.&quot; At CareNest, we strive
+            to support every child&#39;s growth with love and care that reflects
+            these values.
           </p>
         </div>
       </div>

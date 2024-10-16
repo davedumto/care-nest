@@ -5,7 +5,7 @@ import ScrollReveal from "scrollreveal";
 import Baby from "@/app/baby.gif";
 import Bottom from "@/app/herobtm.svg";
 
-const hero = () => {
+const Hero = () => {
   useEffect(() => {
     // Initialize ScrollReveal on the specific element
     ScrollReveal().reveal(".reveal-text", {
@@ -62,4 +62,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
