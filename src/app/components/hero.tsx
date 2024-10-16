@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Ensures this component runs on the client-side
 import React, { useEffect } from "react";
 import Image from "next/image";
 import ScrollReveal from "scrollreveal";
@@ -7,14 +7,16 @@ import Bottom from "@/app/herobtm.svg";
 
 const Hero = () => {
   useEffect(() => {
-    // Initialize ScrollReveal on the specific element
-    ScrollReveal().reveal(".reveal-text", {
-      duration: 1500, // Animation duration in milliseconds
-      distance: "50px", // Distance the element will move during the reveal
-      origin: "bottom", // Reveal the text starting from the bottom
-      reset: false, // Ensures the animation only happens once
-      opacity: 0, // Start with zero opacity and fade in
-    });
+    // Ensure ScrollReveal is only executed in the browser
+    if (typeof window !== "undefined") {
+      ScrollReveal().reveal(".reveal-text", {
+        duration: 1500, // Animation duration in milliseconds
+        distance: "50px", // Distance the element will move during the reveal
+        origin: "bottom", // Reveal the text starting from the bottom
+        reset: false, // Ensures the animation only happens once
+        opacity: 0, // Start with zero opacity and fade in
+      });
+    }
   }, []);
 
   return (
