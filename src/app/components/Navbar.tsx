@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Logo from "@/app/logo.svg";
+import Logo from "@/app/logo.png";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // For hamburger and close icons
 
@@ -93,11 +93,11 @@ const Navbar = () => {
   return (
     <div
       ref={navbarRef} // Attach the ref to the navbar div
-      className="flex justify-between items-center px-[2em] sticky top-0 z-50 bg-[#F6F5F5] shadow-md"
+      className="flex justify-between items-center px-[2em] sticky top-0 z-50 bg-[#F6F5F5] shadow-md p-[1em]"
     >
       {/* Logo Section */}
       <div>
-        <a href="/" className="w-[20%]">
+        <a href="/" className="lg:w-[20%] w-[10%]">
           <Image src={Logo} alt="Logo" height={100} width={200} className="" />
         </a>
       </div>
@@ -154,7 +154,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div
           ref={mobileMenuRef} // Attach the ref to the mobile menu div
-          className="absolute top-[70px] left-1/2 transform -translate-x-1/2 border-[1.5px] border-[#518ac0] bg-white md:mt-[5em] mt-[3em] w-[80%] md:w-[60%] h-auto flex flex-col items-center justify-center shadow-lg xl:hidden rounded-t-md rounded-b-3xl z-50 overflow-hidden"
+          className="absolute top-[70px] left-1/2 transform -translate-x-1/2 border-[1.5px] border-[#518ac0] bg-white md:mt-[5em] mt-[1em] w-[80%] md:w-[60%] h-auto flex flex-col items-center justify-center shadow-lg xl:hidden rounded-t-md rounded-b-3xl z-50 overflow-hidden"
         >
           <ul className="w-full flex flex-col items-center justify-center gap-[1.5em] py-6">
             {navLinks.map((link, index) => (

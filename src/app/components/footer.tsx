@@ -2,13 +2,13 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Logo from "@/app/logo.svg";
+import Logo from "@/app/logo.png";
 import { FaWhatsapp, } from 'react-icons/fa'; 
 import { FaSquarePhone } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <div className='bg-[#515b92] flex flex-col lg:flex-row justify-between gap-[2em] items-center lg:p-3 px-3 py-[2em]'>
+    <div className='bg-[#515b92] flex flex-col lg:flex-row justify-between gap-[2em] items-center lg:p-[2em] px-3 py-[2em]'>
       <div>
         <a href="/" className="w-[20%]">
           <Image src={Logo} alt="Logo" height={50} width={200} className="h-[6]" />
