@@ -10,7 +10,7 @@ const Hero = () => {
     // Ensure ScrollReveal is only executed in the browser
     if (typeof window !== "undefined") {
       ScrollReveal().reveal(".reveal-text", {
-        duration: 1500, // Animation duration in milliseconds
+        duration: 1600, // Animation duration in milliseconds
         distance: "50px", // Distance the element will move during the reveal
         origin: "bottom", // Reveal the text starting from the bottom
         reset: false, // Ensures the animation only happens once
